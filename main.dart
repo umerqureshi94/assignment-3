@@ -12,9 +12,6 @@
 //   print(new_List);
 // }
 
-
-
-
 //Q.2: Create an empty list of type string called days. Use the add method to add names of 7 days and print all days.
 
 // void main() {
@@ -30,9 +27,6 @@
 //   print(new_list);
 // }
 
-
-
-
 // //Q3.Add your 7 friend names to the list. Use where to find a day name that starts with alphabet a.
 
 // void main() {
@@ -46,8 +40,8 @@
 //     "Saad"
 //   ];
 //   print(new_list);
-//   print(new_list.indexWhere((element) => element.startsWith('A')));
-//   }
+//   print(new_list.where((element) => element.startsWith('A')));
+// }
 
 //Q.4 Create a map with name, address, age, country keys and store values to it. Update country name to other country and print all keys and values.
 // void main() {
@@ -62,20 +56,20 @@
 //   print(new_map);
 // }
 
-
-
 // //Q.5 Create a map with name, phone keys and store some values to it.
 // // Use where to find all keys that have length 4.
-// void main() {
-//   Map data = {
-//     'name': "Umer",
-//     'fname': 'Naseem',
-//     'addr': 'house no abc123',
-//     'phone': "0300-2600000",
-//   };
-//   print(data.keys.length == 4);
-//   print(data);
-// }
+void main() {
+  Map data = {
+    'name': "Umer",
+    'fname': 'Naseem',
+    'addr': 'house no abc123',
+    'phone': "0300-2600000",
+  };
+  print(data.keys
+      .where((key) => key.length == 4)); // to get the keys of length =4
+  print(data.values
+      .where((value) => value.length == 4)); // to get the values of length =4;
+}
 
 // Q.6:Create Map variable name world then inside it create countries Map (dart Map) and
 // using key, value pair assign country, capitalCity, currency and language to it.
